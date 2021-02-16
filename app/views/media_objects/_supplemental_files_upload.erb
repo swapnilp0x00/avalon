@@ -15,7 +15,7 @@ Unless required by applicable law or agreed to in writing, software distributed
 %>
 <div id="files_<%= index %>" class="section_files_tool">
   <span class="tool_label"><%= label %></span>
-  <%= form_for :supplemental_file, :url => object_supplemental_files_path(section), html: {method: "post"} do |form| %>
+  <%= form_for :supplemental_file, :url => object_supplemental_files_path(section), html: { method: "post" } do |form| %>
     <%= form.file_field :file, class: "filedata" %>
     <input type="button" class="btn btn-primary btn-xs" onclick="$('#files_<%= index %> .filedata').click();"
       value="Upload" />
